@@ -1,5 +1,5 @@
 export const BasicTypes = () => {
-	const name: string = "Fernando";
+	const name: string = "Sebastián";
 	const age: number = 32;
 	const isActive: boolean = true;
 
