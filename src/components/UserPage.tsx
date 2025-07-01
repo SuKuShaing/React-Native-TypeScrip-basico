@@ -1,8 +1,6 @@
 import { useUsers } from "../hooks/useUsers";
 import { UserRow } from "./UserRow";
 
-// https://reqres.in/api/users?page=2
-
 export const UserPage = () => {
 
     const { users } = useUsers();
@@ -23,9 +21,11 @@ export const UserPage = () => {
 				</thead>
 
 				<tbody>
-					<UserRow />
-					<UserRow />
-					<UserRow />
+                    {
+                        users.map((user) => (
+                            <UserRow key={user.id} user={user} />
+                        ))
+                    }
 				</tbody>
 			</table>
 
