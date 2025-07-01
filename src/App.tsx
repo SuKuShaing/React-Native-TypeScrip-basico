@@ -16,7 +16,7 @@ function App() {
 				{/* <BasicFunctions /> */}
 				{/* <Counter /> */}
 				{/* <LoginPage /> */}
-				<UserPage />
+				{/* <UserPage /> */}
 			</div>
 		</AuthProvider>
 	);

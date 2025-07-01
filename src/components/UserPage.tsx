@@ -3,7 +3,7 @@ import { UserRow } from "./UserRow";
 
 export const UserPage = () => {
 
-    const { users } = useUsers();
+    const { users, nextPage, prevPage } = useUsers();
 
     console.log(users);
 
@@ -30,10 +30,10 @@ export const UserPage = () => {
 			</table>
 
 			<div className="w-[500px] flex justify-between mt-2">
-				<button className="p-2 bg-blue-500 text-white rounded-[5px]">
+				<button className="p-2 bg-blue-500 text-white rounded-[5px]" onClick={prevPage}>
 					Anterior
 				</button>
-				<button className="p-2 bg-blue-500 text-white rounded-[5px]">
+				<button className="p-2 bg-blue-500 text-white rounded-[5px]" onClick={nextPage}>
 					Siguiente
 				</button>
 			</div>
