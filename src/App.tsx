@@ -5,6 +5,7 @@
 // import { LoginPage } from "./components/LoginPage";
 // import { UserPage } from "./components/UserPage";
 import { AuthProvider } from "./context/AuthContext";
+import { FormsPage } from "./components/FormsPage";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 				{/* <Counter /> */}
 				{/* <LoginPage /> */}
 				{/* <UserPage /> */}
+				<FormsPage />
 			</div>
 		</AuthProvider>
 	);
